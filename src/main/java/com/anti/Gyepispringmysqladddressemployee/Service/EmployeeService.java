@@ -10,6 +10,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class EmployeeService {
+
      private final EmployeeRepository employeeRepository;
      public List<Employee> findAllEmployees() {
           return employeeRepository.findAll();
