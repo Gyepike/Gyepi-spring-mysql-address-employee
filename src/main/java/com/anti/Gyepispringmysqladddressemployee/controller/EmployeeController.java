@@ -3,9 +3,7 @@ package com.anti.Gyepispringmysqladddressemployee.controller;
 import com.anti.Gyepispringmysqladddressemployee.Service.EmployeeService;
 import com.anti.Gyepispringmysqladddressemployee.entity.Employee;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,8 +13,24 @@ import java.util.List;
 public class EmployeeController {
 
     private final EmployeeService employeeService;
+
     @GetMapping("/employees")
-    public List<Employee> renderAllBooks() {
-        return  employeeService.findAllEmployees();
+    public List<Employee> findAllEmployees() {
+        return employeeService.findAllEmployees();
+    }
+
+    @PostMapping("/employees")
+    public Employee addNewEmployee(@RequestBody Employee employee) {
+        return employeeService.saveEmployee(employee);
+    }
+
+    @GetMapping("/employees/{id}")
+    public Employee findEmployeeById(@PathVariable Long id) {
+        return employeeService.findEmployeeById(id);
+    }
+
+    @GetMapping("/employees/name/{name}")
+    public Employee findWritersByNameIgnoreCase(@PathVariable String name) {
+        return employeeService.findWritersByNameIgnoreCase(name);
     }
 }

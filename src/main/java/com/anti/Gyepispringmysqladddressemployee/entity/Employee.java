@@ -1,5 +1,6 @@
 package com.anti.Gyepispringmysqladddressemployee.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,11 +18,12 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Long id;
+    private Long id;
 
-    private String empName;
-    private Integer empAge;
+    private String name;
+    private Integer age;
 
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
-    private List<Address> addresslist;
+    @JsonManagedReference
+    private List<Address> addresses;
 }

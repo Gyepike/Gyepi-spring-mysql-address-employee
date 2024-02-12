@@ -11,8 +11,21 @@ import java.util.List;
 @Service
 public class EmployeeService {
 
-     private final EmployeeRepository employeeRepository;
-     public List<Employee> findAllEmployees() {
-          return employeeRepository.findAll();
-     }
+    private final EmployeeRepository employeeRepository;
+
+    public List<Employee> findAllEmployees() {
+        return employeeRepository.findAll();
+    }
+
+    public Employee saveEmployee(Employee employee) {
+        return employeeRepository.save(employee);
+    }
+
+    public Employee findEmployeeById(Long id) {
+        return employeeRepository.findById(id).orElseThrow(() -> new RuntimeException("Employee not found with id: " + id));
+    }
+
+    public Employee findWritersByNameIgnoreCase(String name) {
+        return employeeRepository.findWritersByNameIgnoreCase(name);
+    }
 }

@@ -1,12 +1,9 @@
 package com.anti.Gyepispringmysqladddressemployee.controller;
 
-
 import com.anti.Gyepispringmysqladddressemployee.Service.AddressService;
 import com.anti.Gyepispringmysqladddressemployee.entity.Address;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,10 +12,15 @@ import java.util.List;
 @RequestMapping("/api")
 public class AddressController {
 
-     private final AddressService addressService;
+    private final AddressService addressService;
 
-     @GetMapping("/address")
-     public List<Address> renderAllBooks() {
-         return addressService.findAllAddress();
-     }
+    @GetMapping("/address")
+    public List<Address> renderAllAddress() {
+        return addressService.findAllAddress();
+    }
+
+    @PostMapping("/address")
+    public Address addNewBook(@RequestBody Address Address) {
+        return addressService.saveAddress(Address);
+    }
 }
