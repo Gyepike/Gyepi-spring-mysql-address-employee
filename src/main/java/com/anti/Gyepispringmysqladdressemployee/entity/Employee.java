@@ -1,4 +1,4 @@
-package com.anti.Gyepispringmysqladddressemployee.entity;
+package com.anti.Gyepispringmysqladdressemployee.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;

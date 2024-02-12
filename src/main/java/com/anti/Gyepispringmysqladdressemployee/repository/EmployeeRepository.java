@@ -1,6 +1,6 @@
-package com.anti.Gyepispringmysqladddressemployee.repository;
+package com.anti.Gyepispringmysqladdressemployee.repository;
 
-import com.anti.Gyepispringmysqladddressemployee.entity.Employee;
+import com.anti.Gyepispringmysqladdressemployee.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

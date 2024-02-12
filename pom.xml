@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.anti</groupId>
-	<artifactId>Gyepi-spring-mysql-adddress-employee</artifactId>
+	<artifactId>Gyepi-spring-mysql-address-employee</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Gyepi-spring-mysql-adddress-employee</name>
 	<description>Demo project for Spring Boot</description>

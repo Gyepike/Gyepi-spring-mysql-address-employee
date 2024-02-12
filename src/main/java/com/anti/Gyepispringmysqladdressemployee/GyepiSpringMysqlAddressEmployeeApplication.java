@@ -1,13 +1,12 @@
-package com.anti.Gyepispringmysqladddressemployee;
+package com.anti.Gyepispringmysqladdressemployee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GyepiSpringMysqlAdddressEmployeeApplication {
+public class GyepiSpringMysqlAddressEmployeeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GyepiSpringMysqlAdddressEmployeeApplication.class, args);
+        SpringApplication.run(GyepiSpringMysqlAddressEmployeeApplication.class, args);
     }
-
 }

@@ -1,10 +1,10 @@
-package com.anti.Gyepispringmysqladddressemployee;
+package com.anti.Gyepispringmysqladdressemployee;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GyepiSpringMysqlAdddressEmployeeApplicationTests {
+class GyepiSpringMysqlAddressEmployeeApplicationTests {
 
 	@Test
 	void contextLoads() {

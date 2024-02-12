@@ -1,8 +1,8 @@
-package com.anti.Gyepispringmysqladddressemployee.Service;
+package com.anti.Gyepispringmysqladdressemployee.Service;
 
-import com.anti.Gyepispringmysqladddressemployee.entity.Address;
-import com.anti.Gyepispringmysqladddressemployee.entity.Employee;
-import com.anti.Gyepispringmysqladddressemployee.repository.AddressRepository;
+import com.anti.Gyepispringmysqladdressemployee.entity.Address;
+import com.anti.Gyepispringmysqladdressemployee.entity.Employee;
+import com.anti.Gyepispringmysqladdressemployee.repository.AddressRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
