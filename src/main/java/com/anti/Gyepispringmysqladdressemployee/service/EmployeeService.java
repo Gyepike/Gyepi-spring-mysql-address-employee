@@ -1,4 +1,4 @@
-package com.anti.Gyepispringmysqladdressemployee.Service;
+package com.anti.Gyepispringmysqladdressemployee.service;
 
 import com.anti.Gyepispringmysqladdressemployee.entity.Employee;
 import com.anti.Gyepispringmysqladdressemployee.repository.EmployeeRepository;
@@ -26,6 +26,6 @@ public class EmployeeService {
     }
 
     public Employee findWritersByNameIgnoreCase(String name) {
-        return employeeRepository.findWritersByNameIgnoreCase(name);
+        return employeeRepository.findEmployeeByNameIgnoreCase(name);
     }
 }

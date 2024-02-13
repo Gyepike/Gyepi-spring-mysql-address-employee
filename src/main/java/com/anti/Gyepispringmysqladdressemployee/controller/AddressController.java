@@ -1,6 +1,6 @@
 package com.anti.Gyepispringmysqladdressemployee.controller;
 
-import com.anti.Gyepispringmysqladdressemployee.Service.AddressService;
+import com.anti.Gyepispringmysqladdressemployee.service.AddressService;
 import com.anti.Gyepispringmysqladdressemployee.entity.Address;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

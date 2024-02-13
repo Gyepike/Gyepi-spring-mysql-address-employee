@@ -1,4 +1,4 @@
-package com.anti.Gyepispringmysqladdressemployee.Service;
+package com.anti.Gyepispringmysqladdressemployee.service;
 
 import com.anti.Gyepispringmysqladdressemployee.entity.Address;
 import com.anti.Gyepispringmysqladdressemployee.entity.Employee;
